@@ -16,6 +16,6 @@ const job = 'Student';
 const birthYear = 2002;
 let isMarried = false;
 
-console.log("Hello my name is " + firstName + "I am a" + job + "and I was born in " + birthYear + " and am I married?")
+console.log("Hello my name is " + firstName + "I am a" + job + "and I was born in " + birthYear + " and am I married?");
 
 console.log(`Hello my name is ${firstName}, I am a ${job}, I was born in ${birthYear} and am I married?` );
