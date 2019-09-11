@@ -20,7 +20,7 @@ let boolean = true; //also false */
 
 //console.log(`Hello my name is ${firstName}, I am a ${job}, I was born in ${birthYear} and am I married?` );
 
-
+/*
 const now = new Date().getFullYear();
 const yearIlsa = 2003;
 let fullAge= 18;
@@ -32,9 +32,80 @@ let averageAge = (ageNick + ageWill) / 2;
 console.log(averageAge);
 
 let x,y,q,z; 
+*/
 /*x = 5;
 y = x;
 z = y;
 q = z;
 console.log(z); 
 */
+
+//if else statements
+
+/*
+let firstName = 'Paul';
+let status = 'married';
+
+if (status === 'single') {
+    console.log(`${firstName} is single and ready to mingle`);
+} else{
+    console.log (`Someone made a big mistake with ${firstName} `);
+}
+// triple equals when same type and value are being checked for, always use
+*/
+
+/*
+const robWeight = 78;
+const dejWeight = 92;
+const robHeight = 1.69;
+const dejHeight = 1.95;
+const robBmi = robWeight / (robHeight * robHeight);
+const dejBmi = dejWeight / (dejHeight * dejHeight);
+
+if(robBmi > dejBmi){
+    console.log(`Rob is heavier`);
+} else{
+    console.log(`Dejon is heavier`);
+}
+*/
+
+/*
+let firstName = 'Sarah';
+let age = 35;
+
+if (age < 13) {
+    console.log(`${firstName} is a young lady`);
+} else if (age >= 13 && age < 20) {
+    console.log(`${firstName} is a teenager.....ugh`);
+} else if (age >= 20 && age < 30) {
+    console.log(`${firstName} is a young woman`);
+} else {
+    console.log(`She is a boomer`);
+}
+//check from top to bottom so first one to come true is the only one that runs.
+*/
+
+/*
+
+/////Ternary Operator
+let firstName = 'Melkadze';
+let age = 22;
+
+age >= 21 ? console.log(`${firstName} will drink alcohol`) : console.log(`${firstName} will drink Chocy Milk`);
+//Shortcut for an if/else statement
+
+*/
+
+//Truthy and Falsey and equality operators
+
+//falsey values: null, 0, undefined, '', NaN, false
+//Truthy values: Anything not above this line
+
+let height = 22;
+
+if(height == '22') {
+    console.log('Hey this is type coercial');
+} else {
+    console.log('No type coercion with triple ===');
+}
+//Type of values is different but still comes out true due to double equals
