@@ -100,7 +100,7 @@ age >= 21 ? console.log(`${firstName} will drink alcohol`) : console.log(`${firs
 
 //falsey values: null, 0, undefined, '', NaN, false
 //Truthy values: Anything not above this line
-
+/*
 let height = 22;
 
 if(height == '22') {
@@ -108,4 +108,36 @@ if(height == '22') {
 } else {
     console.log('No type coercion with triple ===');
 }
+*/
 //Type of values is different but still comes out true due to double equals
+
+//Functions
+function calculateAge(birthYear) {
+    //console.log (2019 - birthYear);
+    return 2019 - birthYear;
+    //Value of the functions result is returned
+}
+let galloBirth = 2002;
+//calculateAge(galloBirth);
+
+//functions have to be called to do anything
+//functionCall(argument goes here);
+
+function noArg() {
+    console.log(`something`);
+}
+noArg();
+
+const ageGallo = calculateAge(2002);
+const ageIlsa = calculateAge(2003);
+const ageThami = calculateAge(2004);
+//console.log(ageGallo,ageIlsa,ageThami)
+
+let firstName = 'Brendan';
+function yearsUntilRetire(year, firstName) {
+    let age = calculateAge(year);
+    let retirement = 65 - age;
+
+    console.log(`${firstName} retires in ${retirement} years`);
+}
+yearsUntilRetire(2002, firstName);
