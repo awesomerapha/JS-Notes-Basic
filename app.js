@@ -112,6 +112,7 @@ if(height == '22') {
 //Type of values is different but still comes out true due to double equals
 
 //Functions
+/*
 function calculateAge(birthYear) {
     //console.log (2019 - birthYear);
     return 2019 - birthYear;
@@ -141,3 +142,44 @@ function yearsUntilRetire(year, firstName) {
     console.log(`${firstName} retires in ${retirement} years`);
 }
 yearsUntilRetire(2002, firstName);
+*/
+
+//function whatDoYouDo(job, firstName) {}; Function declaration without definition/expression
+
+/*
+let whatDoYouDo = function(job,firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teachers children';
+        case 'driver':
+            return firstName + ' drivers people.....over Bryan';
+        case 'designer':
+            return firstName + ' designers things';
+        default:
+            return firstName + ' is almost as lazy as Bryan';
+            
+    }
+}
+console.log(whatDoYouDo('teacher', 'Thami'));
+console.log(whatDoYouDo('driver', 'Veda'));
+console.log(whatDoYouDo('musician', 'Rob'));
+*/
+
+//////Arrays
+
+////////Initializing an array
+let names = ['Brian', 'Andrew', 'Winny', 'kaey'];
+let numbers = [1,25,6,7,8];
+let crazyArray = ['string', 203, true];
+/* console.log(names[0]);
+console.log(names.length);
+ */
+/* 
+ names.forEach(function(el){
+     console.log(el);
+ })
+  */
+
+names.push('melkadze sir');
+//Adds to the end of an array
+//pop takes item out of array
