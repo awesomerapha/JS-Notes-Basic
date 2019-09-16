@@ -183,3 +183,4 @@ console.log(names.length);
 names.push('melkadze sir');
 //Adds to the end of an array
 //pop takes item out of array
+const namePairs = [ names[0] + names[1], names[2] + names[3] ];
