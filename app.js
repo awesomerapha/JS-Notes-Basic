@@ -168,7 +168,7 @@ console.log(whatDoYouDo('musician', 'Rob'));
 //////Arrays
 
 ////////Initializing an array
-let names = ['Brian', 'Andrew', 'Winny', 'kaey'];
+/* let names = ['Brian', 'Andrew', 'Winny', 'kaey'];
 let numbers = [1,25,6,7,8];
 let crazyArray = ['string', 203, true];
 /* console.log(names[0]);
@@ -180,7 +180,45 @@ console.log(names.length);
  })
   */
 
-names.push('melkadze sir');
+//names.push('melkadze sir');
 //Adds to the end of an array
 //pop takes item out of array
-const namePairs = [ names[0] + names[1], names[2] + names[3] ];
+//const namePairs = [ names[0] + names[1], names[2] + names[3] ]; 
+
+/* function tipCalculator(bill) {
+    let percentage;
+    if (bill < 50) {
+        percentage = .2;
+    } else if (bill >= 50 && bill < 200) {
+        percentage = .15;
+    } else {
+        percentage = .1;
+    }
+    return percentage * bill;
+}
+
+const bills = [140, 45, 270];
+const 
+ */
+/////// Objects and Methods
+const spiderMan = {
+    alias:'Spider-man',
+    firstname: 'Peter',
+    lastName:'Parker',
+    age: 16,
+    goodGuy: true,
+    location: {
+        state: 'NY',
+        city: 'NYC'
+    },
+    getBirthYear: function(){
+        return 2019 - this.age;
+    }
+}
+
+console.log(spiderMan.location.city);
+
+const me = Object.create(spiderMan);
+console.log(spiderMan);
+spiderMan.alias = 'superman';
+console.log(me.alias);
