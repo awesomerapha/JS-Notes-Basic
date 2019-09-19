@@ -201,7 +201,7 @@ const bills = [140, 45, 270];
 const 
  */
 /////// Objects and Methods
-const spiderMan = {
+/* const spiderMan = {
     alias:'Spider-man',
     firstname: 'Peter',
     lastName:'Parker',
@@ -222,3 +222,69 @@ const me = Object.create(spiderMan);
 console.log(spiderMan);
 spiderMan.alias = 'superman';
 console.log(me.alias);
+ */
+
+ ///// LOOPS/Iterations
+
+//const cars = ['Ford', 'Chevy', 'Honda', 'Toyota'];
+/*  for(i = 0; i < cars.length; i++) {
+     console.log(cars[i]);
+     
+ } */
+
+/*  cars.forEach(function(car){
+     console.log(`${car}`);
+     
+ }); */
+
+
+ /////////Hoisting, Scope, Execution Stack AKA Javascript you don't see
+
+/*  test1();
+ notHoisted();
+
+ function test1(){
+     console.log('this is hoisted?');
+ }
+
+ const notHoisted = function() {
+     console.log('I am not hoisted');
+     
+ } */
+ ///////Only the default function declaration is hoisted while the one under the variable would need to be declared first
+
+
+ /////this keyword
+/* 
+ function test1(){
+     console.log(this);
+ } */
+
+ const spiderMan = {
+    alias:'Spider-man',
+    firstname: 'Peter',
+    lastName:'Parker',
+    age: 16,
+    goodGuy: true,
+    location: {
+        state: 'NY',
+        city: 'NYC'
+    },
+    getBirthYear: function(){
+        console.log(this);
+    }
+}
+
+ //spiderMan.getBirthYear();
+ ////Result is the properties of the spiderman object
+ //Points to our objects
+
+ function Hero(alias, powers, age){
+     this.alias = alias;
+     this.powers = powers;
+     this.age = age;
+ }
+ const batman = new Hero('Batman', 'Wealthy', 44);
+ console.log(batman);
+
+
