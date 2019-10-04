@@ -259,7 +259,7 @@ console.log(me.alias);
  function test1(){
      console.log(this);
  } */
-
+/* 
  const spiderMan = {
     alias:'Spider-man',
     firstname: 'Peter',
@@ -287,4 +287,26 @@ console.log(me.alias);
  const batman = new Hero('Batman', 'Wealthy', 44);
  console.log(batman);
 
+ */
 
+ class Album {
+     constructor(title, artist, yearReleased){
+         this.title = title;
+         this.artist = artist;
+         this.yearReleased = yearReleased;
+     }
+     calculateAge(){
+         return(new Date().getFullYear() - this.yearReleased);
+     }
+ }
+
+ const abbeyRoad = new Album('Abbey Road', 'The Beatles', 1969); //Instantiate new album
+ //const sgtPepper = new Album('sgt pepper', 'Beatles', 1970);
+
+ class CD extends Album {
+     constructor(title, artist, yearReleased, digital){
+         super(title, artist, yearReleased);
+         this.digital = digital;
+     }
+     
+ }
